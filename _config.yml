@@ -1,3 +1,2 @@
 theme: jekyll-theme-tactile
-plugins:
-  - jekyll-sitemap
+show_downloads: true
