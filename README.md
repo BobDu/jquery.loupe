@@ -1,4 +1,4 @@
-## jquery.loupe
+# jquery.loupe
 
 ## jQuery放大镜插件
 
