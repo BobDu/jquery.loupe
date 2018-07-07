@@ -30,7 +30,7 @@ $.fn.loupe = function(){
     }).css('position', 'relative');
     $(newLoupe).css({
         position: 'absolute',
-        left: iL+iw+2+'px',
+        left: iw + 50 +'px',
         top: 0,
         
         width: '400px',
@@ -38,7 +38,7 @@ $.fn.loupe = function(){
         overflow: 'hidden',
     
         display: 'none',
-        border: '1px solid #00c3f5',
+        border: '1px solid #ccc',
         borderRradius: '3%',
         
         zIndex: '999',
@@ -95,7 +95,9 @@ $.fn.loupe = function(){
         if(eve.deltaY == 1) scale += 0.2;
         else scale -= 0.2;
 
-        if(scale<=1) scale = 1;
+        if(scale <= 1) scale = 1;
+        if(scale >= 4) scale = 4;
+
         $(newLoupe).find('img').attr({
             width: iw * scale
         });
@@ -111,27 +113,6 @@ $.fn.loupe = function(){
         $(newLoupe).css('display', 'none');
         $(newMove).css('display', 'none');
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 };
 
 $(function(){
